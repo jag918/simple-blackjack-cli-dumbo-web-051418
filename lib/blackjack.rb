@@ -61,9 +61,9 @@ def runner
   current_total=hit? (current_sum)
   stay = False
   until current_total>21 || stay
-    hit_total = hit?
+    hit_total = hit?(current_total)
     if hit_total == current_total
-      
+      hit?
   end
 end_game(current_total)
 end
