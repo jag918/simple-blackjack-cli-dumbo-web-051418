@@ -59,7 +59,7 @@ def runner
   welcome
   current_sum=initial_round
   current_total=hit? (current_sum)
-  stay = False
+  stay = false
   until current_total>21 || stay
     hit_total = hit?(current_total)
     if hit_total == current_total
