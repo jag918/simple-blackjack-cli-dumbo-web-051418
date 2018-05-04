@@ -65,8 +65,9 @@ def runner
     if hit_total == current_total
       stay = true
       hit?(current_total)
+    else
+      current_total = hit_total
     end
-    current_total = hit_total
   end
 end_game(current_total)
 end
