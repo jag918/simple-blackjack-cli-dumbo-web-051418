@@ -38,7 +38,7 @@ def hit? (current_card_total)
     total=current_card_total+card_one
     total
   elsif input =='s'
-    final=current_card_total_card_total
+    final=current_card_total
     final
   else
     invalid_command
