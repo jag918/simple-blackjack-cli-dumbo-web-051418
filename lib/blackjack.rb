@@ -63,7 +63,8 @@ def runner
   until current_total>21 || stay
     hit_total = hit?(current_total)
     if hit_total == current_total
-      hit?
+      hit?(current_total)
+    current_total = hit_total
   end
 end_game(current_total)
 end
